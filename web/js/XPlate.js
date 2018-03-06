@@ -32,7 +32,7 @@ window.XPlate = window.XPlate || {
 			}
 		}
 		return a;
-	},
+	}
 
 
 };

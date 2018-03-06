@@ -113,12 +113,17 @@ XPlate.Plate = (function(){
 		/**
 		 *
 		 * @returns {Element}
-		 * @private
 		 */
 		_initializeDOM: function(){
 			var dom = document.createElement('div');
 			dom.innerHTML = '<i>Plate</i>';
 			dom.id = this.getId();
+
+			var that = this;
+
+			dom.addEventListener('click', function(){
+				alert("Ого, меня кликнули: Я плейт, меня назвали: " + (that.сonfig.name || that._plateIndex)  + " ");
+			});
 			return dom;
 		},
 		/**

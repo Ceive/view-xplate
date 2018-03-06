@@ -22,10 +22,14 @@ XPlate.Plate.Wrapper = (function(){
 	/**
 	 *
 	 * @returns {Element}
-	 * @private
 	 */
 	p._initializeDOM = function(){
-		return this.wrappedPlate.dom;
+
+		var e = this.wrappedPlate._initializeDOM();
+
+		e.classList.add('Обернутый элемент');
+
+		return e;
 	};
 
 	/**

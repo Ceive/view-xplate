@@ -21,6 +21,7 @@ XPlate.Plate.XCompositionComposite = (function(){
 		dom.id = this.getId();
 		return dom;
 	};
+
 	/**
 	 *
 	 * @param added

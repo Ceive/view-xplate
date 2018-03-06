@@ -39,7 +39,7 @@ XPlate.Collection.CompositionComposite = (function(){
 
 		var result = XPlate.Collection.prototype.splice.call(this, offset, length, replacement);
 
-		if(this.items.length > this.composition.config.compositeSize){
+		if(this.items.length > this.limit){
 			this._dissolve();
 		}else if(oldLength === this.limit && this.limit > this.items.length){
 			this._saturate();

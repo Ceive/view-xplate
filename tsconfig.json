@@ -1,0 +1,17 @@
+{
+  "files": [
+	"./web/ceive/src/main.ts"
+  ],
+  "compilerOptions": {
+	"module": "AMD",
+	"target": "es5",
+	"removeComments": true,
+	"preserveConstEnums": true,
+	"sourceMap": true,
+	"outFile": "./web/ceive/ceive.xplate.js",
+	"sourceRoot": "/ceive/src/"
+  },
+  "exclude": [
+	"node_modules"
+  ]
+}
